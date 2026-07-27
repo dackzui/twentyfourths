@@ -118,22 +118,21 @@ margin-bottom: 12px;
 #contact-form input[type="email"],
 #contact-form input[type="tel"],
 #contact-form textarea {
-width: 100%;
-max-width: 100%;
+display: block;
+width: 100% !important;
+max-width: 100% !important;
 box-sizing: border-box;
 margin-top: 4px;
 padding: 10px 12px;
 }
 
 #contact-form .contact-honeypot {
-position: absolute;
-left: -9999px;
-height: 0;
-overflow: hidden;
+display: none !important;
 }
 
 #contact-form .contact-submit {
 margin-top: 8px;
+width: auto !important;
 }
 
 #contact-status {
@@ -679,7 +678,7 @@ div#packages3 {
 <input type="hidden" name="_subject" value="24's Enquiry">
 <input type="hidden" name="_template" value="table">
 <input type="hidden" name="_next" value="https://twentyfourths.com/?sent=1#contactus">
-<input type="text" name="_honey" class="contact-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+<input type="text" name="_honey" class="contact-honeypot" style="display:none !important" tabindex="-1" autocomplete="off" aria-hidden="true">
 <p><label for="contact-name">Name (required)<br>
 <input id="contact-name" name="name" type="text" maxlength="400" required placeholder="Full name"></label></p>
 <p><label for="contact-email">Email (required)<br>
