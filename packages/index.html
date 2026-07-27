@@ -62,7 +62,58 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fpackages%2F#038;format=xml">
 <meta name="google-site-verification" content="nmfUxTzvnxD8h8fob2t7n-Qow2BNSUDQgPTdF1ie79I">
 <style type="text/css" id="css-fb-visibility">@media screen and (max-width: 640px){.fusion-no-small-visibility{display:none !important;}body .sm-text-align-center{text-align:center !important;}body .sm-text-align-left{text-align:left !important;}body .sm-text-align-right{text-align:right !important;}body .sm-flex-align-center{justify-content:center !important;}body .sm-flex-align-flex-start{justify-content:flex-start !important;}body .sm-flex-align-flex-end{justify-content:flex-end !important;}body .sm-mx-auto{margin-left:auto !important;margin-right:auto !important;}body .sm-ml-auto{margin-left:auto !important;}body .sm-mr-auto{margin-right:auto !important;}body .fusion-absolute-position-small{position:absolute;top:auto;width:100%;}.awb-sticky.awb-sticky-small{ position: sticky; top: var(--awb-sticky-offset,0); }}@media screen and (min-width: 641px) and (max-width: 1024px){.fusion-no-medium-visibility{display:none !important;}body .md-text-align-center{text-align:center !important;}body .md-text-align-left{text-align:left !important;}body .md-text-align-right{text-align:right !important;}body .md-flex-align-center{justify-content:center !important;}body .md-flex-align-flex-start{justify-content:flex-start !important;}body .md-flex-align-flex-end{justify-content:flex-end !important;}body .md-mx-auto{margin-left:auto !important;margin-right:auto !important;}body .md-ml-auto{margin-left:auto !important;}body .md-mr-auto{margin-right:auto !important;}body .fusion-absolute-position-medium{position:absolute;top:auto;width:100%;}.awb-sticky.awb-sticky-medium{ position: sticky; top: var(--awb-sticky-offset,0); }}@media screen and (min-width: 1025px){.fusion-no-large-visibility{display:none !important;}body .lg-text-align-center{text-align:center !important;}body .lg-text-align-left{text-align:left !important;}body .lg-text-align-right{text-align:right !important;}body .lg-flex-align-center{justify-content:center !important;}body .lg-flex-align-flex-start{justify-content:flex-start !important;}body .lg-flex-align-flex-end{justify-content:flex-end !important;}body .lg-mx-auto{margin-left:auto !important;margin-right:auto !important;}body .lg-ml-auto{margin-left:auto !important;}body .lg-mr-auto{margin-right:auto !important;}body .fusion-absolute-position-large{position:absolute;top:auto;width:100%;}.awb-sticky.awb-sticky-large{ position: sticky; top: var(--awb-sticky-offset,0); }}</style>
-<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>		<script type="text/javascript">var doc = document.documentElement;
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<style type="text/css">
+#contact-form label {
+display: block;
+margin-bottom: 12px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form textarea {
+width: 100%;
+max-width: 100%;
+box-sizing: border-box;
+margin-top: 4px;
+padding: 10px 12px;
+}
+
+#contact-form .contact-package-options {
+display: flex;
+flex-wrap: wrap;
+gap: 12px 20px;
+margin-top: 6px;
+}
+
+#contact-form .contact-package-options label {
+display: inline-flex;
+align-items: center;
+gap: 6px;
+margin-bottom: 0;
+}
+
+#contact-form .contact-honeypot {
+position: absolute;
+left: -9999px;
+height: 0;
+overflow: hidden;
+}
+
+#contact-form .contact-submit {
+margin-top: 8px;
+}
+
+#contact-status {
+margin-top: 10px;
+}
+
+#contact-status.is-success {
+color: #2e7d32;
+}
+</style>
+		<script type="text/javascript">var doc = document.documentElement;
 			doc.setAttribute( 'data-useragent', navigator.userAgent );</script>
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46635014-2"></script>
@@ -155,47 +206,30 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				<div class="fusion-fullwidth fullwidth-box fusion-builder-row-1 nonhundred-percent-fullwidth non-hundred-percent-height-scrolling" style="--awb-border-radius-top-left:0px;--awb-border-radius-top-right:0px;--awb-border-radius-bottom-right:0px;--awb-border-radius-bottom-left:0px;--awb-background-color:rgba(36,36,36,0);"><div class="fusion-builder-row fusion-row">
 <div class="fusion-layout-column fusion_builder_column fusion-builder-column-0 fusion_builder_column_1_2 1_2 fusion-one-half fusion-column-first" style="--awb-bg-size:cover;width:50%;width:calc(50% - ( ( 4% ) * 0.5 ) );margin-right: 4%;"><div class="fusion-column-wrapper fusion-flex-column-wrapper-legacy">
 <div class="fusion-title title fusion-title-1 fusion-sep-none fusion-title-text fusion-title-size-one"><h1 class="title-heading-left fusion-responsive-typography-calculated" style="margin:0;--fontSize:34;line-height:1.4;">Package Enquiry</h1></div>
-<div class="wpcf7 no-js" id="wpcf7-f142-p143-o1" lang="en-US" dir="ltr">
-<div class="screen-reader-response">
-<p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul>
+<form id="contact-form" action="https://formsubmit.co/hello@twentyfourths.com" method="POST" aria-label="Package enquiry form">
+<input type="hidden" name="_subject" value="24's Package Enquiry">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://twentyfourths.com/packages/?sent=1">
+<input type="text" name="_honey" class="contact-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+<p><label for="contact-name">Name (required)<br>
+<input id="contact-name" name="name" type="text" maxlength="400" required placeholder="Full name"></label></p>
+<p><label for="contact-email">Email (required)<br>
+<input id="contact-email" name="email" type="email" maxlength="400" required placeholder="you@example.com"></label></p>
+<p><label for="contact-phone">Phone (required)<br>
+<input id="contact-phone" name="phone" type="tel" maxlength="40" required placeholder="+61..."></label></p>
+<fieldset>
+<legend>Package Choice (required)</legend>
+<div class="contact-package-options">
+<label><input type="checkbox" name="package" value="Starter"> Starter</label>
+<label><input type="checkbox" name="package" value="Corporate"> Corporate</label>
+<label><input type="checkbox" name="package" value="eCommerce"> eCommerce</label>
 </div>
-<form action="/packages/?simply_static_page=148#wpcf7-f142-p143-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
-<div style="display: none;">
-<input type="hidden" name="_wpcf7" value="142">
-<input type="hidden" name="_wpcf7_version" value="5.9.8">
-<input type="hidden" name="_wpcf7_locale" value="en_US">
-<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f142-p143-o1">
-<input type="hidden" name="_wpcf7_container_post" value="143">
-<input type="hidden" name="_wpcf7_posted_data_hash" value="">
-<input type="hidden" name="_wpcf7_recaptcha_response" value="">
-</div>
-<p><label> Your Name (required)<br>
-<span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" value="" type="text" name="your-name"></span> </label>
-</p>
-<p><label> Your Email (required)<br>
-<span class="wpcf7-form-control-wrap" data-name="your-email"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email" aria-required="true" aria-invalid="false" value="" type="email" name="your-email"></span> </label>
-</p>
-<p><label> Your Phone number (required)<br>
-<span class="wpcf7-form-control-wrap" data-name="tel-384"><input size="40" maxlength="400" class="wpcf7-form-control wpcf7-tel wpcf7-text wpcf7-validates-as-tel" aria-invalid="false" value="" type="tel" name="tel-384"></span> </label>
-</p>
-<p><label> Package Choice (required)<br>
-<span class="wpcf7-form-control-wrap" data-name="checkbox-996"><span class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required"><span class="wpcf7-list-item first"><input type="checkbox" name="checkbox-996[]" value="Starter"><span class="wpcf7-list-item-label">Starter</span></span><span class="wpcf7-list-item"><input type="checkbox" name="checkbox-996[]" value="Corportate"><span class="wpcf7-list-item-label">Corportate</span></span><span class="wpcf7-list-item last"><input type="checkbox" name="checkbox-996[]" value="eCommerce"><span class="wpcf7-list-item-label">eCommerce</span></span></span></span> </label>
-</p>
-<p><label> Your Message (required)<br>
-<span class="wpcf7-form-control-wrap" data-name="your-message"><textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" name="your-message"></textarea></span> </label>
-</p>
-<p><span id="wpcf7-678c861a3b0ad-wrapper" class="wpcf7-form-control-wrap honeypot-922-wrap" style="display:none !important; visibility:hidden !important;"><label for="wpcf7-678c861a3b0ad-field" class="hp-message">Please leave this field empty.</label><input id="wpcf7-678c861a3b0ad-field" class="wpcf7-form-control wpcf7-text" type="text" name="honeypot-922" value="" size="40" tabindex="-1" autocomplete="new-password"></span>
-</p>
-
-<p><input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit" value="Send">
-</p>
-<p style="display: none !important;" class="akismet-fields-container" data-prefix="_wpcf7_ak_"><label>&#916;<textarea name="_wpcf7_ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="_wpcf7_ak_js" value="243"><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p>
-<div class="fusion-alert alert custom alert-custom fusion-alert-center wpcf7-response-output fusion-alert-capitalize alert-dismissable" style="--awb-border-size:1px;" role="alert">
-<div class="fusion-alert-content-wrapper"><span class="fusion-alert-content"></span></div>
-<button type="button" class="close toggle-alert" data-dismiss="alert" aria-label="Close">&times;</button>
-</div>
+</fieldset>
+<p><label for="contact-message">Message (required)<br>
+<textarea id="contact-message" name="message" rows="6" maxlength="2000" required placeholder="Tell us about your project"></textarea></label></p>
+<p><input class="fusion-button button-flat fusion-button-default-size button-default fusion-button-default contact-submit" type="submit" id="contact-submit" value="Send Message"></p>
+<div id="contact-status" role="status" aria-live="polite"></div>
 </form>
-</div>
 <div class="fusion-clearfix"></div>
 </div></div>
 <div class="fusion-layout-column fusion_builder_column fusion-builder-column-1 fusion_builder_column_1_2 1_2 fusion-one-half fusion-column-last" style="--awb-bg-size:cover;width:50%;width:calc(50% - ( ( 4% ) * 0.5 ) );"><div class="fusion-column-wrapper fusion-flex-column-wrapper-legacy">
@@ -437,6 +471,19 @@ var fusionVideoVars = {"status_vimeo":"1"};
 			<span id="awb-to-top-label" class="screen-reader-text">Go to Top</span>
 		</a>
 	</section>
+<script>
+(function () {
+	var form = document.getElementById("contact-form");
+	var statusEl = document.getElementById("contact-status");
+	if (!statusEl) return;
+	if (new URLSearchParams(window.location.search).get("sent") === "1") {
+		statusEl.textContent = "Thank you! Your message has been sent. We'll get back to you soon.";
+		statusEl.className = "is-success";
+		if (form) form.reset();
+		history.replaceState(null, "", window.location.pathname);
+	}
+})();
+</script>
 		</body>
 
 
